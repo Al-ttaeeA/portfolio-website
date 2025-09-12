@@ -1,0 +1,9 @@
+# Node.js dependencies
+node_modules/
+
+# Build cache
+dist/*.map
+
+# OS files
+.DS_Store
+Thumbs.db
