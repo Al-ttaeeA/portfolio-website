@@ -4,8 +4,8 @@
   "description": "Personal Website and Portfolio",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tailwindcss -i ./src/input.css -o ./dist/style.css --watch"
+    "build:css": "tailwindcss -i ./public/style.css -o ./public/output.css --watch",
+    "dev": "concurrently \"npm run build:css\" \"node server.js\""
   },
   "repository": {
     "type": "git",
@@ -18,9 +18,15 @@
     "url": "https://github.com/Al-ttaeeA/portfolio-website/issues"
   },
   "homepage": "https://github.com/Al-ttaeeA/portfolio-website#readme",
+  "dependencies": {
+    "socket.io": "^4.8.1"
+  },
   "devDependencies": {
-    "auto-prefixer": "^0.4.2",
     "autoprefixer": "^10.4.21",
+    "concurrently": "^9.2.1",
+    "connect-livereload": "^0.6.1",
+    "livereload": "^0.10.3",
+    "nodemon": "^3.1.10",
     "postcss": "^8.5.6",
     "tailwindcss": "^3.4.17"
   }

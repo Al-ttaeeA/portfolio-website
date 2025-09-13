@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Portfolio</title>
+
+    <!-- compiled Tailwind -->
+    <link href="output.css" rel="stylesheet">
+</head>
+<body>
+    <!-- About Me Section -->
+    <div class="min-h-screen bg-[url('/images/bg-desktop.png')] bg-cover bg-center flex items-center justify-center">
+        <!-- Glass Container -->
+        <div class="bg-white/10 backdrop-blur rounded-xl 
+        w-[90vw] h-[90vh] sm:w-[40vw] sm:h-[80vh] 
+        flex flex-col items-start justify-centre
+        border border-white/5 shadow-[0_0_10px_rgba(255,255,255,0.2)]">
+
+            <div id="personalImage" class="w-full h-[30%] flex items-center justify-center">
+                <img src="/images/pfp.jpg" alt="Profile Picture" class="rounded-full mt-4 h-[90%] aspect-[1/1] object-cover border border-white/10 shadow-[0_0_10px_rgba(255,255,255,0.2)]">
+            </div>
+
+            <div id="aboutMeText" class="w-full h-[50%] flex flex-col items-start justify-center">
+                <h1 class="w-full text-2xl font-bold text-white text-center">Ahmed Al-Ttaee</h1>
+                <p class="text-white text-sm p-4 text-justify ">
+                    lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+            </div>
+
+            <div id="socials" class="w-full h-[20%] flex items-center -mt-4">
+                <div class="h-[80%] w-full flex justify-evenly items-center">
+                    <!-- Single Box -->
+                    <a href="https://github.com/Al-ttaeeA" target="_blank" class="h-full aspect-square overflow-hidden bg-white/10 rounded-lg 
+                    shadow-lg hover:scale-105 hover:shadow-[0_0_10px_rgba(100,100,100,0.2)] border border-white/5 transition-transform
+                    flex items-center justify-center">
+                        <img src="/images/github.png" alt="Example 1" class="w-[80%] h-[80%] object-cover">
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/ahmed-alttaee-b87617343/" target="_blank" class="h-full aspect-square overflow-hidden bg-white/10 rounded-lg 
+                    shadow-lg hover:scale-105 hover:shadow-[0_0_10px_rgba(100,100,100,0.2)] border border-white/5 transition-transform
+                    flex items-center justify-center">
+                        <img src="/images/linkedin.png" alt="Example 1" class="w-[80%] h-[80%] object-cover">
+                    </a>
+
+                    <a href="https://www.instagram.com/ahmed.alttaee/" target="_blank" class="h-full aspect-square overflow-hidden bg-white/10 rounded-lg 
+                    shadow-lg hover:scale-105 hover:shadow-[0_0_10px_rgba(100,100,100,0.2)] border border-white/5 transition-transform
+                    flex items-center justify-center">
+                        <img src="/images/instagram.png" alt="Example 1" class="w-[80%] h-[80%] object-cover">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+ 
+    <div id="skills">
+
+    </div>
+
+
+    <div id="projects">
+
+    </div>
+
+
+    <div id="game">
+
+    </div>
+
+    <!-- Socket.IO client (served by the server automatically) -->
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="client.js"></script>
+</body>
+</html>
