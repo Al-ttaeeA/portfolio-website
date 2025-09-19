@@ -62,7 +62,7 @@
 
     <div id="line" class="w-full h-3 bg-gradient-to-r from-blue-700 to-green-400 border-y-2 border-y-gray-800"></div>
  
-    <div id="skills" class="w-full py-16 bg-gray-100 flex flex-col items-center justify-center bg-[url('/images/bg-desktop2.png')]">
+    <div id="skills" class="w-full py-16 flex flex-col items-center justify-center bg-[url('/images/bg-desktop2.png')]">
         <h1 class="w-[90%] text-3xl 2xl:text-5xl font-bold text-white text-center -mt-0 sm:mt-1 2xl:-mt-0 mb-10">Technical Skills (Hover for more info)</h1>
 
         <div class="container px-4 items-center justify-center -mt-8 sm:-mt-0">
@@ -195,12 +195,69 @@
 
     <div id="line2" class="w-full h-3 bg-gradient-to-r from-green-400 to-blue-700 border-y-2 border-y-gray-800"></div>
 
-    <div id="projects">
+    <div id="projects" class="w-full py-16 flex flex-col items-center justify center bg-[url('/images/bg-desktop3.png')] bg-center">
+        <h1 class="w-[90%] text-3xl 2xl:text-5xl font-bold text-white text-center -mt-0 sm:mt-1 2xl:-mt-0 mb-10">Projects</h1>
 
+        <div class="container px-4 items-center justify-center -mt-8 sm:-mt-0">
+            <div class="w-full grid gap-14 sm:p-10 grid-cols-1 sm:grid-cols-2 items-center justify-items-center mt-10 sm:mt-0">
+                
+                <!-- Project Box 1 -->
+                <div class="w-full h-full sm:aspect-square bg-white/10 backdrop-blur rounded-xl flex flex-col items-center justify-center
+                            border border-white/5 shadow-[0_0_10px_rgba(255,255,255,0.2)] transition-transform hover:scale-105
+                            relative overflow-hidden group">    
+                    <div class="w-[90%] h-[10%] flex items-center justify-center mt-4">
+                        <h3 class="text-white text-center text-[clamp(1.5rem,2.5vw,2rem)] w-full">
+                            GPYOU
+                        </h3>
+                    </div>
+
+                    <div class="w-[90%] h-[55%] flex items-center justify-center mt-2">
+                        <p class="text-white text-[clamp(1rem,1.2vw,1.5rem)]  p-4 text-center">
+                            Gemini AI powered GPU recommendation tool that asks the user for 4 parameters and generates 
+                            a GPU recommendation that perfectly suits the user's needs. It doesn't stop there, the recommendation 
+                            is connected to a 3D model that the user can view to ensure the user knows what the GPU looks like.
+                            <br><br>
+                            This project was made in collaboration with Zain Ahmad, Zaryan Syed, and Musab Saqib for GDSC Hacks 2025 
+                            and has won the Best UI award.
+                        </p>
+                    </div> 
+
+                    <a href=https://zainswe.github.io/GPYOU/src/ target="_blank" class="w-[90%] h-[20%] flex items-center justify-center mt-10 sm:mt-2 overflow-hidden rounded-lg transition-transform hover:scale-105">
+                        <img src="/images/GPYOU.jpg" alt="GPYOU" class="w-full h-full object-cover" />
+                    </a>
+                </div>
+
+                <!-- Project Box 2 -->
+                <div class="w-full h-full sm:aspect-square bg-white/10 backdrop-blur rounded-xl flex flex-col items-center justify-center
+                            border border-white/5 shadow-[0_0_10px_rgba(255,255,255,0.2)] transition-transform hover:scale-105
+                            relative overflow-hidden group">    
+                    <div class="w-[90%] h-[10%] flex items-center justify-center mt-6">
+                        <h3 class="text-white text-center text-[clamp(1.5rem,2.5vw,2rem)] w-full">
+                            Wizard Of Cardonia
+                        </h3>
+                    </div>
+
+                    <div class="w-[90%] h-[55%] flex items-center justify-center mt-6">
+                        <p class="text-white text-[clamp(1rem,1.2vw,1.5rem)]  p-4 text-center">
+                            Wizard of Cardonia is a fully object-oriented, text-based roguelike deck-building 
+                            RPG developed in Java. Built from the ground up with a modular, scalable architecture, 
+                            the game features a dynamic card combat system.
+                            <br><br>
+                            Full OOP architecture using inheritance, polymorphism, and encapsulation.
+                            Status effect engine with turn-based duration and layered damage behaviors.
+                        </p>
+                    </div> 
+
+                    <a href=https://github.com/Al-ttaeeA/WizardOfCardonia target="_blank" class="w-[90%] h-[20%] flex items-center justify-center mt-6 sm:-mt-4 overflow-hidden rounded-lg transition-transform hover:scale-105">
+                        <img src="/images/WizardOfCardonia.jpg" alt="Wizard Of Cardonia" class="w-full h-full object-contain" />
+                    </a>
+                </div>
+            </div>
+        </div>
     </div>
 
 
-    <div id="game">
+    <div id="game" style="display:none">
 
     </div>
 
