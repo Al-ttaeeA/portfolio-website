@@ -1080,6 +1080,10 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
 
+.caret-transparent {
+  caret-color: transparent;
+}
+
 .opacity-0 {
   opacity: 0;
 }
