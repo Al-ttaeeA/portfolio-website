@@ -4,8 +4,8 @@
   "description": "Personal Website and Portfolio",
   "main": "index.js",
   "scripts": {
-    "build:css": "tailwindcss -i ./public/style.css -o ./public/output.css --watch",
-    "dev": "concurrently \"npm run build:css\" \"node server.js\""
+    "build": "tailwindcss -i ./public/style.css -o ./public/output.css --minify",
+    "watch": "tailwindcss -i ./public/style.css -o ./public/output.css --watch"
   },
   "repository": {
     "type": "git",
